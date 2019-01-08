@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/addItemBtn"
+        android:layout_width="99dp"
+        android:layout_height="55dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="onAddItem"
+        android:text="@string/add"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="453dp" />
+
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="361dp"
+        android:layout_height="452dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/etNewItem"
+        android:layout_width="275dp"
+        android:layout_height="56dp"
+        android:layout_toStartOf="@+id/addItemBtn"
+        android:layout_toLeftOf="@+id/addItemBtn"
+        android:hint="Add new item to list here"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+</android.support.constraint.ConstraintLayout>
